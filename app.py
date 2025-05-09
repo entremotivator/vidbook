@@ -457,7 +457,7 @@ def sidebar_auth():
                         st.session_state.current_user = username
                         log_activity("auth", f"User logged in: {username}", username)
                         add_notification(f"Welcome back, {st.session_state.users[username]['name']}!", "success")
-                        st.experimental_rerun()
+                        st.rerun()
                     else:
                         st.error("Invalid username or password")
             
