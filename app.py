@@ -485,32 +485,32 @@ def sidebar_auth():
             if st.button("📊 Dashboard", use_container_width=True):
                 st.session_state.active_tab = "dashboard"
                 st.session_state.current_client = None
-                st.experimental_rerun()
+                st.rerun()
             
             if st.button("👥 Clients", use_container_width=True):
                 st.session_state.active_tab = "clients"
                 st.session_state.current_client = None
-                st.experimental_rerun()
+                st.rerun()
                 
             if st.button("🗓️ Reservations", use_container_width=True):
                 st.session_state.active_tab = "reservations"
                 st.session_state.current_client = None
-                st.experimental_rerun()
+                st.rerun()
             
             if st.button("📤 Import/Export", use_container_width=True):
                 st.session_state.active_tab = "import_export"
                 st.session_state.current_client = None
-                st.experimental_rerun()
+                st.rerun()
                 
             if st.button("📈 Reports", use_container_width=True):
                 st.session_state.active_tab = "reports"
                 st.session_state.current_client = None
-                st.experimental_rerun()
+                st.rerun()
                 
             if has_permission("admin") and st.button("⚙️ Settings", use_container_width=True):
                 st.session_state.active_tab = "settings"
                 st.session_state.current_client = None
-                st.experimental_rerun()
+                st.rerun()
             
             # Client selector (if there are clients)
             if st.session_state.clients:
