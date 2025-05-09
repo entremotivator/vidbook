@@ -2,3 +2,10 @@ streamlit
 pandas
 numpy
 plotly
+requests
+matplotlib
+seaborn
+PyGithub
+xlrd
+openpyxl
+Pillow
