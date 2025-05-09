@@ -532,7 +532,7 @@ def sidebar_auth():
                 if st.button("View Selected Client", use_container_width=True):
                     if st.session_state.current_client:
                         st.session_state.active_tab = "client_details"
-                        st.experimental_rerun()
+                        st.rerun()
             
             # Notifications
             unread_count = sum(1 for n in st.session_state.notifications if not n["read"])
